@@ -104,9 +104,10 @@ a:hover{ text-decoration:underline }
 .logo-img{
   display:block;
   width:auto;
-  height:56px;
+  height:72px;
   max-width:none;
   object-fit:contain;
+  flex-shrink:0;
   filter:drop-shadow(0 10px 24px rgba(0,0,0,.28));
   transition:transform .2s ease, filter .2s ease, opacity .2s ease;
 }
@@ -117,7 +118,7 @@ a:hover{ text-decoration:underline }
   gap:.18rem;
   min-width:0;
   line-height:1;
-  font-size:1.28rem;
+  font-size:1.4rem;
   font-weight:800;
   letter-spacing:-.02em;
   color:var(--text);
@@ -159,6 +160,14 @@ a:hover{ text-decoration:underline }
   padding:.1rem 0;
 }
 
+.site-footer .logo-img{
+  height:64px;
+}
+
+.site-footer .logo-text{
+  font-size:1.22rem;
+}
+
 /* Burger */
 .nav-toggle{ display:none }
 .burger{ display:none; cursor:pointer }
@@ -188,11 +197,11 @@ a:hover{ text-decoration:underline }
 @media (max-width: 520px){
   .header-inner{ align-items:center; gap:.5rem }
   .logo{ flex:1 1 auto; min-width:0; gap:.55rem }
-  .logo-img{ height:40px }
+  .logo-img{ height:50px }
   .logo-text{
     top:1px;
     max-width:62vw;
-    font-size:1rem;
+    font-size:1.08rem;
     white-space:nowrap;
     overflow:hidden;
     text-overflow:ellipsis;
@@ -442,10 +451,10 @@ input[type="checkbox"].field-error{
 /* Phone tweaks (portrait phones) */
 @media (max-width: 360px){
   .logo{ gap:.45rem; }
-  .logo-img{ height:34px; }
+  .logo-img{ height:42px; }
   .logo-text{
     max-width:56vw;
-    font-size:.9rem;
+    font-size:.98rem;
     top:1px;
   }
 }
